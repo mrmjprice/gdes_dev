@@ -57,10 +57,16 @@ html {
     height: 100%;
 }
 
+body {
+    background-image: url(/sources/img/graph_bg.gif);
+    background-repeat: repeat;
+    padding-left: 60px;
+}
+
 header {
     width: 70px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -74,13 +80,15 @@ header ul {
 }
 
 header li {
-    min-width: 350px;
+    white-space: nowrap;
+    display: inline-block;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
     border: solid 6px #000;
     padding-top: 10px;
     padding-left: 15px;
-    
+    padding-right: 15px;
+    background-color: #fff;
 }
 
 header li a {
@@ -101,10 +109,17 @@ header li a {
     color: #fff;
 }
 
-.responsive-menu{
+.responsive-menu {
 	display: none;
 }
  
 .expand {
 	display: block !important; 
+}
+
+.main-identity-novideo {
+    height: 95vh;
+    width: auto;
+    margin: auto auto;
+    display:block;
 }

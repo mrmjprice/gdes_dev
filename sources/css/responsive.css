@@ -1,0 +1,73 @@
+@media only screen and (max-width: 767px) {
+    
+    body {
+    background-image: url(/sources/img/graph_bg.gif);
+    background-repeat: repeat;
+    padding-left: 0px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #212121;
+}
+    
+header ul {
+    padding-top: 160px;
+    margin-left: 0px;
+    width: 100%;
+    position: relative;
+}
+
+header li {
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: solid 6px #000;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+}
+
+header li a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hamburger-icon {
+    position: relative;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.menuclick {
+    color: #fff;
+}
+
+.responsive-menu {
+	display: none;
+}
+ 
+.expand {
+	display: block !important;
+    background-color: rgba(0,0,0,  0.75);
+    height: 100vh;
+}
+    
+    .main-identity-novideo {
+    padding-top: 100px;
+    height: 80vh;
+    width: auto;
+    margin: auto auto;
+}
+}
