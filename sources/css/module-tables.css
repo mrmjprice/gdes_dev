@@ -44,6 +44,7 @@
 
 .last {
     margin-right: 0px !important;
+    float:right;
 }
 
 #level5 h5 {
@@ -64,6 +65,10 @@
     background-color: #ffd900;
 }
 
+.row {
+    width: 100%;
+}
+
 /* EXPAND STATES */
 .twosem-expand {
     background-color: #d74040;
@@ -72,13 +77,19 @@
     padding: 15px;
     line-height: 1.4em;
     font-size: 0.9em;
+    display: none;
 }
 
 .onesem-expand {
     background-color: #d74040;
     margin-top: -10px;
     margin-bottom: 10px;
-    padding: 15px;
     line-height: 1.4em;
     font-size: 0.9em;
+    width: 345px;
+    display: none;
 }
+
+.onesem-expand p {
+    margin: 15px;
+}   

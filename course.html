@@ -21,7 +21,7 @@
                 <i class="fa fa-bars fa-3x menuclick"></i>
                     </div
                 <nav>
-                    <div class="respons ive-menu">
+                    <div class="responsive-menu">
                     <ul>
                         <li><a href="index.html">Home Page</a></li>
                         <li><a href="course.html">About The Course</a></li>
@@ -50,25 +50,24 @@
                 <div class="twosem">
                     Creative Digital Imaging & Typography (30)
                 </div>
-                <div class="twosem onesem">
+                <div class="row"><div class="twosem onesem">
                     Multimedia in Context (15)
                 </div>
                 <div class="twosem onesem last">
                     Concept Visualisation (15)
                 </div>
-                                <div class="twosem onesem last onesem-expand">
-                    ASdasd
-                    asdas
-                    das
-                    da
-                    sd
+                                <div class="onesem-expand last">
+                    <p>Sustainable iPhone freegan four dollar toast organic occupy, direct trade tilde Echo Park Brooklyn.</p>  
+                   </div>
                 </div>
-                <div class="twosem onesem">
+                
+                <div class="row"><div class="twosem onesem">
                     Optional (15)
                 </div>
                 <div class="twosem onesem last">
                     Optional (15)
                 </div>
+                    </div>
             </div>
         </div>
         
@@ -213,6 +212,14 @@
 		$(function($){
     	     $(".hamburger-icon").click(function() {
 				$(".responsive-menu").toggleClass("expand")
+    	     });
+        });
+	</script>
+    
+    <script type="text/javascript">
+		$(function($){
+    	     $(".twosem").click(function() {
+				$(".twosem-expand").toggleClass("expand")
     	     });
         });
 	</script>
