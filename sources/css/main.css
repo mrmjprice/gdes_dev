@@ -60,7 +60,8 @@ html {
 body {
     background-image: url(/sources/img/graph_bg.gif);
     background-repeat: repeat;
-    padding-left: 60px;
+    background-attachment: fixed;   
+    padding-left: -60px;
 }
 
 h2 {
@@ -68,7 +69,7 @@ h2 {
     diplay: inline-block;
     padding: 5px;
     height: 40px;
-    border: solid 3.5px #000;
+    border: solid 3.5px #f00;
     color: #f00;
     background-color: #fff;
     font-family: helvetica, arial, sans-serif;
@@ -90,6 +91,10 @@ header {
 header ul {
     margin-left: 70px;
     margin-top: -60px;
+}
+
+nav {
+    margin-right: 60px;
 }
 
 header li {
@@ -202,4 +207,115 @@ header li a {
     color: #f00;
     border-bottom: solid 2px #f00;
     margin-bottom: 3px;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: #f00;
+}
+
+/* MODULE PAGE CSS */
+
+#module-links {
+    position: fixed;
+    bottom: 40px;
+
+}
+
+#module-links img {
+    width: 60px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fullscreen-modules {
+    width: 100vw;
+    height: 100vh;
+}
+
+#level4 h2 {
+    width: 420px;
+    text-align: center;
+    margin-left: 80px;
+    position: relative;
+    top: 60px;
+    left: 50px;
+    z-index: 998;
+    margin-bottom: 190px;
+}
+
+#level4 {
+    position:relative
+    padding-top: 0px !important;
+    background-image: url("/sources/img/level4-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 95vw;
+}
+
+#level5 {
+    background-image: url("/sources/img/level5-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 95vw;
+}
+
+#level6 {
+    background-image: url("/sources/img/level6-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 100vw;
+}
+
+
+
+#team h2 {
+    width: 360px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.member {
+    width: 180px;
+    height: 200px;
+    float:left;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+#team {
+    margin-left: 130px;
+}
+
+.photo {
+    width: 110px;
+   height: 110px;
+   -moz-border-radius: 55px; 
+   -webkit-border-radius: 55px; 
+   border-radius: 55px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.member h5 {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;  
+    padding-bottom: 5px;
+}
+
+.member h6 {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+    color: #a4a4a4;
+}
+
+#teammembers {
+    width: 100%;
 }
