@@ -63,6 +63,19 @@ body {
     padding-left: 60px;
 }
 
+h2 {
+    white-space: nowrap;
+    diplay: inline-block;
+    padding: 5px;
+    height: 40px;
+    border: solid 3.5px #000;
+    color: #f00;
+    background-color: #fff;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+
 header {
     width: 70px;
     height: 100%;
@@ -122,4 +135,71 @@ header li a {
     width: auto;
     margin: auto auto;
     display:block;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+#news-home {
+    width: 85vw;
+    margin: 0 auto;
+    display: block;
+}
+
+#news-home h2 {
+    width: 130px;
+    margin-bottom: 40px;
+}
+
+/* <div class="story">
+                <h3>%headline%</h3>
+                <h4>%timestamp%</h4>
+                <p>%blurb%</p>
+                <p class="read-more">%link%</p>
+            </div>
+*/
+
+.story {
+    display: block;
+    width: 27%;
+    max-width: 250px;
+    float: left;
+    margin-right: 100px; 
+    margin-bottom: 20px;
+}
+
+.story h3 {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.35em;
+    margin-bottom: 10px;
+}
+
+.story h4 {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    padding-bottom: 15px;
+    max-width: 270px;
+} 
+
+.read-more {
+    display: block;
+    height: 0.3em;
+    float: right;
+    text-align: right;
+    text-decoration: none;
+    color: #f00;
+    border-bottom: solid 2px #f00;
+    margin-bottom: 3px;
 }

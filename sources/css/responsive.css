@@ -1,8 +1,15 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 420px) {
+
+    /* Martin Price - University of Worcester */
+    /* Acknowledgement: Martin Sherwood for editing mistakes and simplifying my workarounds! */
     
-    body {
-    background-image: url(/sources/img/graph_bg.gif);
-    background-repeat: repeat;
+    /* *****************************
+       RESPONSIVE CSS FOR HOME PAGE
+       ***************************** */
+
+/* --------------- [GENERAL RESPONSIVE EDITS] --------------- */
+    
+body {
     padding-left: 0px;
 }
 
@@ -11,63 +18,108 @@ header {
     height: 60px;
     position: sticky;
     top: 0;
-    z-index: 999;
-    background-color: #212121;
 }
     
 header ul {
-    padding-top: 160px;
+    padding-top: 70px;
     margin-left: 0px;
     width: 100%;
     position: relative;
 }
 
 header li {
-    white-space: nowrap;
-    display: inline-block;
     position: relative;
-    height: 40px;
+    width: 90vw;
     margin: 0 auto;
-    margin-top: 5px;
-    border: solid 6px #000;
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #fff;
+    margin-top: 10px;
+    text-align: center;
 }
-
-header li a {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
+    
 .hamburger-icon {
-    position: relative;
     padding-left: 10px;
     padding-top: 5px;
-}
-
-.menuclick {
-    color: #fff;
-}
-
-.responsive-menu {
-	display: none;
+    z-index: 10;
 }
  
 .expand {
-	display: block !important;
-    background-color: rgba(0,0,0,  0.75);
-    height: 100vh;
+    background-color: rgba(0,0,0,  0.85);
+    height: 110vh;
 }
     
-    .main-identity-novideo {
+.main-identity-novideo {
     padding-top: 100px;
     height: 80vh;
-    width: auto;
-    margin: auto auto;
+}
+}
+
+/* NB: General mobile responsiveness ends here - specific changes below */
+/* --------------- [NEWS SECTION - HOME PAGE] --------------- */
+/* Getting rid of columns as the screen gets smaller */
+/* Column 4 disappears */
+
+@media only screen and (max-width: 1650px) {
+.one-quarter-last {
+    display: none !important;
+}
+    
+.story {
+    max-width: 350px;
+    width: 30%;
+    margin-right: 5%;
+}
+    
+.one-third-last {
+    margin-right: 0;
+}
+
+.story p {
+    max-width: 350px;
+}
+}
+/* ----------------------------------------- */
+
+/* Columns three and four disappear */
+@media only screen and (max-width: 1150px) {
+.one-quarter-last {
+    display: none !important;
+}
+    
+.one-third-last {
+    display: none !important;
+}
+    
+.one-half-last {
+    margin-right: 0;
+}
+    
+.story {
+    display: block;
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+}
+/* ----------------------------------------- */
+
+/* STACKED */
+@media only screen and (max-width: 700px) {
+.one-quarter-last {
+    display: none !important;
+}
+    
+.one-third-last {
+    display: none !important;
+}
+    
+.story {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #d6d6d6;
+}
+    
+#news-home {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 }
