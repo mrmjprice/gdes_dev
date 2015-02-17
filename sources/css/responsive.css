@@ -69,6 +69,14 @@ header li {
 #module-links {
     display: none;
 }
+    
+    .main-identity-novideo {
+        display: block !important;
+    }
+    
+    video#bgvid {
+        display: none;
+    }
 /* ---- [ END MENU RESPONSIVE CODE ] ---- */
 }
 
