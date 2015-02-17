@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="sources/css/main.css">
         <link rel="stylesheet" type="text/css" href="sources/css/responsive.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="sources/js/jquery.youtubebackground.js"></script>
+        <script src="http://www.youtube.com/iframe_api"></script>
         
     </head>
     <body>
@@ -26,13 +28,11 @@
                 </nav>
             </div>
         </header>
-<div id="vid-home">
-        <video autoplay poster="homepage.jpg" id="bgvid">
-<source src="sources/homepage.webm" type="video/webm">
-<source src="sources/homepage.mp4" type="video/mp4">
-</video>
+        <div id="vid-home">
+<div id="background-video">
         <img src="sources/img/main_identity_home.png" class="main-identity-novideo" />
     </div>
+            </div>
         <div id="news-home">
             <h2>News</h2>
             <div class="story one">
@@ -90,6 +90,28 @@ This is a great article, more more more. More article here. Blah blah blah. Univ
     	     });
         });
 	</script>
+    
+    <script type="text/javascript">
+        $('#background-video').YTPlayer({
+  fitToBackground: true, // use as a background video
+  videoId: '7pQxqqXcorU'
+});
+        
+        $('#background-video').YTPlayer({
+  mute: true,
+  repeat: true,
+  width: $(window).width(),
+  wrapperZIndex: 99,
+  playButtonClass: 'YTPlayer-play',
+  pauseButtonClass: 'YTPlayer-pause',
+  muteButtonClass: 'YTPlayer-mute',
+  volumeUpClass: 'YTPlayer-volume-up',
+  volumeDownClass: 'YTPlayer-volume-down',
+  increaseVolumeBy: 10,
+  start: 0,
+  fitToBackground: true
+});
+    </script>
 
     <!-- Theme development by Martin Price Â© 2015 - University of Worcester -->
 </html>

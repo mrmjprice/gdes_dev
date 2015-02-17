@@ -74,7 +74,7 @@ header li {
         display: block !important;
     }
     
-    video#bgvid {
+    #background-video {
         display: none;
     }
 /* ---- [ END MENU RESPONSIVE CODE ] ---- */
