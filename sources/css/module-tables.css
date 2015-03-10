@@ -82,10 +82,14 @@
     background-color: #d74040;
     margin-top: -10px;
     margin-bottom: 10px !important;
-    padding: 15px;
+    /*padding: 15px;*/
     line-height: 1.4em;
     font-size: 0.9em;
     display: block;
+}
+
+.twosem-expand p {
+    padding: 7.5px;
 }
 
 .onesem-expand {
@@ -96,9 +100,10 @@
     font-size: 0.9em;
     width: 345px;
     display:block;
+    white-space: nowrap;
 }
 
-.onesem-expand p {
+p {
     margin: 15px;
 }   
 
@@ -118,4 +123,17 @@
 
 .row {
     margin-bottom: 10px; 
+}
+
+/*animate dropdowns*/
+.module-transition {
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+    overflow-y: hidden;            
+}
+
+.module-transition-hidden {            
+    max-height: 0;            
 }

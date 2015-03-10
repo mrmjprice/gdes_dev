@@ -41,23 +41,31 @@
             <h2>About The Course</h2>
             <div class="module-table">
                 <h5>Level 4</h5>
-                    <div class="twosem title">
+                
+                    
+                
+                    <div class="twosem title showcontent">
                         Design: Skills & Theory (30)
                     </div>
-                    <div class="twosem-expand">
-                        Sustainable iPhone freegan four dollar toast organic occupy, direct trade tilde Echo Park Brooklyn. Bitters craft beer pork belly Odd Future deep v. Blog shabby chic Bushwick, lo-fi chillwave cronut Helvetica. 
+                
+                    <div class="module-wrapper twosem-expand module-transition module-transition-hidden">
+                        <div class="expand">
+                            <p>Sustainable iPhone freegan four dollar toast organic occupy, direct trade tilde Echo Park Brooklyn. Bitters craft beer pork belly Odd Future deep v. Blog shabby chic Bushwick, lo-fi chillwave cronut Helvetica. </p>
+                        </div>
                     </div>
-                    <div class="twosem">
+                
+                    <div class="twosem title showcontent">
                         Creative Digital Imaging & Typography (30)
                     </div>
-                    <div class="twosem-expand expand">
-                        The ability to manipulate imagery has phenomenal impact on the way we work, our knowledge base, our society and our cultural horizons. A sound appreciation of typography and its application on its own and with imagery is an essential quality in any designer. This module seeks to introduce the technology behind digital imaging and typography in the form of industry-standard software and hardware; drawing on heritage and context and the wider effects on contemporary practice and society.
+                    <div class="twosem-expand module-transition module-transition-hidden module-wrapper"><div class="expand">
+                        <p>The ability to manipulate imagery has phenomenal impact on the way we work, our knowledge base, our society and our cultural horizons. A sound appreciation of typography and its application on its own and with imagery is an essential quality in any designer. This module seeks to introduce the technology behind digital imaging and typography in the form of industry-standard software and hardware; drawing on heritage and context and the wider effects on contemporary practice and society.</p>
+                        </div>
                     </div>
                     <div class="onesem">
                         Multimedia in Context (15) 
                     </div>
-                    <div class="onesem-expand">
-                        sdfasdfasdf
+                    <div class="onesem onesem-expand">
+                        <p>sdfasdfasdf</p>
                     </div>
                     
                     <div class="onesem last">
@@ -209,7 +217,49 @@
     </body>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
+    
+    <script>
+    (function ($) {
+        $.fn.slideUpTransition = function() {
+            return this.each(function() {
+                var $el = $(this);
+                $el.css("max-height", "0");
+                $el.addClass("module-transition-hidden");
+
+            });
+        };
+
+        $.fn.slideDownTransition = function() {
+            return this.each(function() {
+                var $el = $(this);
+                $el.removeClass("module-transition-hidden");
+
+                //make visible to get the size
+                $el.css("max-height", "none");
+                var height = $el.outerHeight();
+
+                //reset to 0 then animate with small delay
+                $el.css("max-height", "0");
+
+                setTimeout(function() {
+                    $el.css({
+                        "max-height": height
+                    });
+                }, 1);
+            });
+        };
+    })(jQuery);
+    </script>
+    
+    <script>
+    $(".showcontent").click(function () {
+        if ($(".module-wrapper").hasClass("module-transition-hidden"))
+            $(".module-wrapper").slideDownTransition();
+        else
+            $(".module-wrapper").slideUpTransition();
+    });
+    </script>
+    
 	<script type="text/javascript">
 		$(function($){
     	     $(".hamburger-icon").click(function() {
