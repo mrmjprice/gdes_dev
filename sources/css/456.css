@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS to make the 456 menu work */
+
+#module-menu {
+    width: 70px;
+    position: relative;
+}
+
+#l4 {
+    width: 29px;
+    height: 46px;
+    background-image:url('/sources/img/sprites/4.png');
+    background-position: 29px 0px;   
+    display:block;
+    z-index: 10;
+        position: absolute;
+    bottom: 50px;
+    left: 3px;
+}
+
+#l4:hover, #l4:active {
+    width: 29px;
+    height: 46px;
+    background-image:url('/sources/img/sprites/4.png');
+    background-position: 0px; 0px;
+    z-index: 10;
+}
+
+#l5 {
+    width: 34px;
+    height: 46px;
+    background-image:url('/sources/img/sprites/5.png');
+    background-position: 34px 0px;   
+    display:block;
+    z-index: 20;
+    
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+#l5:hover, #l5:active {
+    width: 34px;
+    height: 46px;
+    background-image:url('/sources/img/sprites/5.png');
+    background-position: 0px; 0px;
+    z-index: 20;
+}
+
+#l6 {
+    width: 32px;
+    height: 46px;
+    background-image:url('/sources/img/sprites/6.png');
+    background-position: 32px 0px;   
+    display:block;
+    z-index: 30;
+    position: absolute;
+    bottom: -12px;
+    left: 5px;
+}
+
+#l6:hover, #l6:active {
+    width: 32px;
+    height: 46px;
+    background-image:url('/sources/img/sprites/6.png');
+    background-position: 0px; 0px;
+    z-index: 30;
+}
