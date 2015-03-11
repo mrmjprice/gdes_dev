@@ -130,7 +130,7 @@ header li a {
 }
  
 .expand {
-	display: block !important; 
+	display: block !important;
 }
 
 .main-identity-novideo {
@@ -211,64 +211,6 @@ header li a {
     text-decoration: none;
     color: #f00;
 }
-
-/* MODULE PAGE CSS */
-
-#module-links {
-    position: fixed;
-    bottom: 40px;
-
-}
-
-#module-links img {
-    width: 60px;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.fullscreen-modules {
-    width: 100vw;
-    height: 100vh;
-}
-
-#level4 h2 {
-    width: 420px;
-    text-align: center;
-    margin-left: 40px;
-    position: relative;
-    left: 50px;
-    z-index: 998;
-    margin-bottom: 190px;
-}
-
-#level4 {
-    position:relative
-    padding-top: 0px !important;
-    background-image: url("/sources/img/level4-background.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
-    width: 95vw;
-}
-
-#level5 {
-    background-image: url("/sources/img/level5-background.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
-    width: 95vw;
-}
-
-#level6 {
-    background-image: url("/sources/img/level6-background.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
-    width: 100vw;
-}
-
-
 
 #team h2 {
     width: 360px;

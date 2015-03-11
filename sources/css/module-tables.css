@@ -1,8 +1,77 @@
-/* Martin Price - University of Worcester (C) 2015 */
+@charset "utf-8";
+/* Author: Martin Price 2015 */
+/* CSS File for individual elements & the module tables inc. animations */
 
+#module-links {
+    position: fixed;
+    bottom: 40px;
+}
+
+#module-links img {
+    width: 60px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fullscreen-modules {
+    width: 100vw;
+    height: 100vh;
+}
+
+#level4 h2 {
+    width: 420px;
+    text-align: center;
+    margin-left: 40px;
+    position: relative;
+    left: 50px;
+    z-index: 998;
+    margin-bottom: 190px;
+}
+
+#level4 {
+    position:relative
+    padding-top: 0px !important;
+    background-image: url("/sources/img/level4-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 95vw;
+}
+
+#level5 {
+    background-image: url("/sources/img/level5-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 95vw;
+}
+
+#level6 {
+    background-image: url("/sources/img/level6-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 100vw;
+}
+
+/* Page Title */
+
+#level4 h2{
+    width: 425px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Basic Table Elements */
 .module-table {
     width: 700px;
     margin: 0 auto;
+    vertical-align: middle;
+    color: #fff;
+    font-family: helvetica, arial, sans-serif;
 }
 
 .module-table h5 {
@@ -15,53 +84,18 @@
     margin-bottom: 40px;
 }
 
-.module-table {
-    vertical-align: middle;
-    color: #fff;
-    font-family: helvetica, arial, sans-serif;
-}
-
 .twosem {
-    background-color: #e84545;
     width: 700px;
-    height: 40px;
-    margin-bottom: 10px;
+    line-height: 50px;
     text-align: center;
     vertical-align: middle;
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: -0.5px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
-.onerow-fix {
-    display: block;
-    width: auto;
-    margin-bottom: 20px;
-}
-
-.onesem {
-    background-color: #e84545;
-    width: 345px !important;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  display: table-cell;
-  vertical-align: middle;
-        font-size: 1.5em;
-        text-align: center;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    padding-top: 20px;
-}
-
-.last {
-    margin-right: 0px !important;
-    margin-top: 0px;
-    float:right;
-}
-
+/* 15 Credit Semester Blocks */
 .leftsem1 {
     width: 345px;
     float: left;
@@ -72,13 +106,24 @@
     float: right;
 }
 
+.onesem {
+    background-color: #e84545;
+    width: 345px !important;
+    line-height: 50px;
+    float: left;
+        text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding-top: 7px;
+    
+}
+
+/* Level (4/5/6) Titles */
 #level5 h5 {
     color: #69c5d8;
     padding-top: 240px;
-}
-
-#level5 .twosem {
-    background-color: #69c5d8;
 }
 
 #level6 h5 {
@@ -86,64 +131,61 @@
     padding-top: 240px;
 }
 
-#level6 .twosem {
+/* Module Level Colour Backgrounds */
+#level5 .twosem, #level5 .onesem {
+    background-color: #69c5d8;
+}
+
+#level6 .twosem, #level6 .onesem {
     background-color: #ffd900;
 }
 
-.row {
-    width: 100%;
+#level4 .twosem, #level4 .onesem {
+    background-color: #e84545;
 }
 
 /* EXPAND STATES */
 .twosem-expand {
-    background-color: #d74040;
-    margin-top: -10px;
     margin-bottom: 10px !important;
-    /*padding: 15px;*/
     line-height: 1.4em;
-    font-size: 0.9em;
     display: block;
 }
 
-.twosem-expand p {
+.twosem-expand p, .onesem-expand p {
     padding: 7.5px;
 }
 
 .onesem-expand {
-    background-color: #d74040;
-    margin-top: -10px;
-    margin-bottom: 10px;
     line-height: 1.4em;
-    font-size: 0.9em;
-    width: 345px;
-    display:block;
+    display: block;
     white-space: nowrap;
     float: left;
 }
 
+/* Expand Paragraph Formatting */
 p {
     margin: 15px;
-}   
-
-#level4 h2{
-    width: 425px;
-    position: relative;
-    left: 30px;
-    top: 20px;
-    margin-bottom: 10px;
+    font-size: 10pt;
+    line-height: 1.3;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    text-align: left;
 }
 
-#module-links img {
-    width: 50px;
-    height: auto;
-    margin: 0 auto;
+/* Adds bg-colour to the level 4, 5 & 6 expands */
+#level4 .twosem-expand, #level4 .onesem-expand {
+    background-color: #d74040 !important;
 }
 
-.row {
-    margin-bottom: 10px; 
+#level5 .twosem-expand, #level5 .onesem-expand {
+    background-color:#32b6d1 !important;
 }
 
-/*animate dropdowns*/
+#level6 .twosem-expand, #level6 .onesem-expand {
+    background-color:#ffc600 !important;
+}
+
+/* Animate Dropdowns */
 .module-transition {
     -webkit-transition: max-height 0.5s ease-in-out;
     -moz-transition: max-height 0.5s ease-in-out;
@@ -155,3 +197,4 @@ p {
 .module-transition-hidden {            
     max-height: 0;            
 }
+/* -------------------------------------- */
