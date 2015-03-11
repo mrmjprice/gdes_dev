@@ -53,6 +53,10 @@
     background-size: contain;
 }
 
+#team h2 {
+    width: 347px;
+}
+
 /* Page Title */
 
 #level4 h2{
@@ -107,14 +111,13 @@
 .onesem {
     background-color: #e84545;
     width: 345px !important;
-    line-height: 50px;
-    float: left;
-        text-align: center;
+ line-height: 50px;
+    text-align: center;
     vertical-align: middle;
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: -0.5px;
-    padding-top: 7px;
+    padding-top: 10px;
     
 }
 
@@ -158,6 +161,7 @@
     display: block;
     white-space: nowrap;
     float: left;
+    width: 100%;
 }
 
 /* Expand Paragraph Formatting */
