@@ -15,7 +15,7 @@
 }
 
 .fullscreen-modules {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
 }
 
@@ -23,6 +23,7 @@
     width: 420px;
     text-align: center;
     margin-left: 40px;
+    margin-top: 30px;
     position: relative;
     left: 50px;
     z-index: 998;
@@ -30,29 +31,26 @@
 }
 
 #level4 {
-    position:relative
+    position:relative;
     padding-top: 0px !important;
-    background-image: url("/sources/img/level4-background.png");
+    background-image: url("../../sources/img/level4-background.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
-    width: 95vw;
 }
 
 #level5 {
-    background-image: url("/sources/img/level5-background.png");
+    background-image: url("../../sources/img/level5-background.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
-    width: 95vw;
 }
 
 #level6 {
-    background-image: url("/sources/img/level6-background.png");
+    background-image: url("../../sources/img/level6-background.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
-    width: 100vw;
 }
 
 /* Page Title */

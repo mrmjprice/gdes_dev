@@ -9,7 +9,7 @@
 #l4 {
     width: 20px;
     height: 32px;
-    background-image:url('/sources/img/sprites/4a.png');
+    background-image:url('../../sources/img/sprites/4a.png');
     background-position: 20px 0px;   
     display:block;
     z-index: 10;
@@ -21,7 +21,7 @@
 #l4:hover, #l4:active {
     width: 20px;
     height: 32px;
-    background-image:url('/sources/img/sprites/4a.png');
+    background-image:url('../../sources/img/sprites/4a.png');
     background-position: 0px; 0px;
     z-index: 10;
 }
@@ -29,7 +29,7 @@
 #l5 {
     width: 23px;
     height: 32px;
-    background-image:url('/sources/img/sprites/5a.png');
+    background-image:url('../../sources/img/sprites/5a.png');
     background-position: 23px 0px;   
     display:block;
     z-index: 20;
@@ -41,7 +41,7 @@
 #l5:hover, #l5:active {
     width: 24px;
     height: 32px;
-    background-image:url('/sources/img/sprites/5a.png');
+    background-image:url('../../sources/img/sprites/5a.png');
     background-position: 0px; 0px;
     z-index: 20;
 }
@@ -49,7 +49,7 @@
 #l6 {
     width: 22px;
     height: 32px;
-    background-image:url('/sources/img/sprites/6a.png');
+    background-image:url('../../sources/img/sprites/6a.png');
     background-position: 22px 0px;   
     display:block;
     z-index: 30;
@@ -61,7 +61,7 @@
 #l6:hover, #l6:active {
     width: 22px;
     height: 32px;
-    background-image:url('/sources/img/sprites/6a.png');
+    background-image:url('../../sources/img/sprites/6a.png');
     background-position: 0px; 0px;
     z-index: 30;
 }

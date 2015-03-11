@@ -61,7 +61,7 @@ html {
 }
 
 body {
-    background-image: url(/sources/img/graph_bg.gif);
+    background-image: url(../../sources/img/graph_bg.gif);
     background-repeat: repeat;
     padding-left: 60px;
 }
@@ -230,6 +230,7 @@ header li a {
 
 #team {
     margin-left: 130px;
+    margin-top: 80px;
 }
 
 .photo {
